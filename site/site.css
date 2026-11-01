@@ -1,0 +1,35 @@
+:root {
+	--paper: #f6ecdc;
+	--card: #fffaf2;
+	--ink: #1f2a44;
+	--muted: #5d6680;
+	--blue: #3f8cff;
+	--line: #e8d9c0;
+}
+* { box-sizing: border-box; }
+body {
+	margin: 0;
+	background: var(--paper);
+	color: var(--ink);
+	font: 17px/1.6 "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+	padding: 32px max(16px, env(safe-area-inset-right, 0px)) 48px max(16px, env(safe-area-inset-left, 0px));
+}
+main { max-width: 680px; margin: 0 auto; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+header img { width: 72px; height: 72px; border-radius: 18px; }
+header h1 { margin: 0; font-size: 30px; line-height: 1.2; }
+header p { margin: 0; color: var(--muted); }
+section {
+	background: var(--card);
+	border-radius: 20px;
+	border-bottom: 5px solid var(--line);
+	padding: 20px 24px;
+	margin-bottom: 20px;
+}
+h2 { margin: 0 0 8px; font-size: 21px; }
+h3 { margin: 16px 0 4px; font-size: 17px; }
+p, li { margin: 6px 0; }
+a { color: var(--blue); }
+nav { margin-bottom: 20px; }
+nav a { margin-right: 16px; font-weight: 700; }
+footer { color: var(--muted); font-size: 14px; text-align: center; }
